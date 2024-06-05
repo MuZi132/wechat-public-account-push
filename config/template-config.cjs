@@ -2,7 +2,7 @@
 const TEMPLATE_CONFIG = [
   {
     id: '0001',
-    title: '亲爱的, 早上好',
+    title: '宝宝, 早上好！今天也要保持开心哦！',
     desc: `
       **{{date.DATA}}**
       
@@ -12,19 +12,21 @@ const TEMPLATE_CONFIG = [
       
       城市：{{city.DATA}}
       
-      天气：{{weather.DATA}}
+      天气：{{tian_api_weather_weather_{0}.DATA}}
       
-      气温(最高/最低):{{max_temperature.DATA}} / {{min_temperature.DATA}}
+      气温(最高/最低):{{tian_api_weather_highest_{0}.DATA}} / {{tian_api_weather_lowest_{0}.DATA}}
       
-      风向: {{wind_direction.DATA}}
+      风向: {{tian_api_weather_wind_{0}.DATA}}
       
-      风级: {{wind_scale.DATA}}
+      风级: {{tian_api_weather_windsc_{0}.DATA}}
       
       {{comprehensive_horoscope.DATA}}
       
       ---
       
       今天是我们相识的第{{love_day.DATA}}天
+      
+      今天是我们分开的第{{leave_day.DATA}}天，还是那么想你
       
       {{birthday_message.DATA}}
       
